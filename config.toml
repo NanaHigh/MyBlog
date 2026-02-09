@@ -1,0 +1,50 @@
+# Site configuration
+base_url = "https://www.nanahigh.cn"
+title = "NanaHigh's Blog"
+description = "NanaHigh的个人博客"
+author = "NanaHigh"
+theme = "kita"
+
+# Build settings
+compile_sass = true
+build_search_index = true
+
+# RSS feed
+generate_feeds = true
+feed_filenames = ["atom.xml"]
+
+# Taxonomies
+taxonomies = [{ name = "tags", rss = false, paginate_by = 5 }]
+
+# Markdown settings
+[markdown]
+
+[markdown.highlighting]
+theme = "catppuccin-mocha"
+
+# Theme features
+[extra]
+math = false
+mermaid = false
+comment = false
+side_toc = true
+
+# Profile section
+[extra.profile]
+name = "NanaHigh"
+bio = "Present day, present time"
+avatar_url = "images/avatar.jpg"
+
+# Social links
+[[extra.profile.social]]
+name = "github"
+url = "https://github.com/NanaHigh"
+
+[[extra.profile.social]]
+name = "rss"
+url = "$BASE_URL/atom.xml"
+
+# Top menu
+[[extra.menu]]
+name = "Tags"
+url = "$BASE_URL/tags"
